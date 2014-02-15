@@ -23,18 +23,25 @@
 \newpage
 
 \section{Introduction}
-This constitution aims to define the work flow of any development projects undertaken in the future. We hope that it will make a difference to the way you develop software. Universities have their rules of teaching, and most of them want to make students understand basic algorithms and code syntax. This paper is a guide for real world development geared towards producing programs that work for ever. This paper emphasises development projects undertaken by a whole team of developers, not a single coder that is sitting in a basement somewhere.
+This constitution aims to def{}ine the work f{}low of any development projects undertaken in the future. We hope that it will make a dif{}ference to the way you develop software. Universities have their rules of teaching, and most of them want to make students understand basic algorithms and code syntax. This paper is a guide for real world development geared towards producing programs that work for ever. This paper emphasises development projects undertaken by a whole team of developers, not a single coder that is sitting in a basement somewhere.
 
-Most of the tools in the next few sections can be divided into two main categories development tools and system level tools. The development tools are those that you need to while developing a program or application e.g. (--EXAMPLE LIST OF DEVELOPMENT TOOLS--). System level tools are elements that you need to do a specific job e.g. web servers or databases. %Not sure about the clarity of that last sentence.
+Most of the tools in the next few sections can be divided into two main categories development tools and system level tools. The development tools are those that you need to while developing a program or application e.g. (--EXAMPLE LIST OF DEVELOPMENT TOOLS--). System level tools are elements that you need to do a specif{}ic job e.g. web servers or databases. %Not sure about the clarity of that last sentence.
 
 In the following sections we will discuss several tools, most of them built on top of Unix like operating systems. The following sections will put emphasis on the importance of using \textbf{Free} and \textbf{Open Source} software. We admit that there is occasionally a steep learning curve, but after passing it things will make a lot more sense, and you will be a faster, more productive developer.
 
 \section{Databases}
-A database is a system level tool. Most databases run as a server on the system and you can access them by using the CLI (command line interface) or you can install a GUI (graphical user interface) to interact with the database. We recommend using the CLI as often as possible. It will make you faster and more efficient and as a bonus you feel like you're commanding a spaceship or like you're a supercool hax0r!! %this is what happens when I edit things at 3:30am
+A database is a system level tool. Most databases run as a server on the system and you can access them by using the CLI (command line interface) or you can install a GUI (graphical user interface) to interact with the database. We recommend using the CLI as often as possible. It will make you faster and more ef{}f{}icient and as a bonus you feel like you're commanding a spaceship or like you're a supercool hax0r!! %this is what happens when I edit things at 3:30am
 \subsection{PostgreSQL}
 PostgreSQL is a database that has a lot of features and it's used by many companies\cite{http://www.postgresql.org/about/users/} 
 \subsubsection{PostGIS}
 \subsection{MySQL}
+\subsection{ORM}
+Object Relational Mapping is a library that a developer would use to abstract the SQL statement and optimize the calls to the database. Previously, developer needs to know what is the database that their going to use and try to model the database on their problem and construct the relations between tables and use 'INNER' and 'JOIN' statements to get to the tables and traverse the tables. By using the ORM the developers would move all this complex code and install a middle library to write the SQL statements in his programming language.
+
+A good use for ORM would be if the managers switched from database to another the developer would only change the driver from one vender to another ( Postgres to Oracle). Using hand crafted SQL statement would complicate and delay the switch because the developer has to change some of the SQL statement to match the vender implementation of the SQL.
+
+\subsubsection{SQLAlchamy}
+SQLAlchamy is the python framework that abstract the SQL interaction. Developers now can write python classes to model the database table.  
 
 \section{Testing Framework}
 % no example here because it's a language dependent 
