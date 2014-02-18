@@ -30,6 +30,11 @@ Most of the tools in the next few sections can be divided into two main categori
 In the following sections we will discuss several tools, most of them built on top of Unix like operating systems. The following sections will put emphasis on the importance of using \textbf{Free} and \textbf{Open Source} software. We admit that there is occasionally a steep learning curve, but after passing it things will make a lot more sense, and you will be a faster, more productive developer.
 
 \section{Virtual Machine}
+Some projects may require you to work in a specific environment. You might need to develop and run your application in specific operating systems, using specific tools, set up in a very specific way (e.g. a webGIS service running off a GeoServer with an Oracle Spatial database).
+
+One way to do this is to have a whole new physical development machine for every project type that you work on. As you can imagine this can get very expensive and wasteful very fast. Another way would be to force development to adhere to one specific environment and setup but this is very limiting to a developer.
+
+With a virtual machine (VM) you can run an emulation of an entire computer on your host system. This allows you to create very specific development environments where you have the OS that you need, loaded only with the very specific tools and software that you need for the project that you are currently working on. You can take snapshots of your VM, mess around with it, and if anything goes wrong, you can scrap it and reload it from the snapshot. When you're done and your application has been moved to production, you just scrap the VM.
 \subsection{VirtualBox}
 \subsection{Virtual Machine Management Software}
 \subsubsection{Vagrant}
@@ -84,12 +89,13 @@ SQLAlchamy is the python framework that abstract the SQL interaction. Developers
 
 \section{CGI vs WSGI}
 
+\section{RESTful}
+
+\section{\LaTeX}
+
 \section{General Programming Advice}
 
 \section{Glossary of Abbreviations}
 %is there a way to build glossaries using LaTex?
 
-\section{RESTful}
-
-\section{\LaTeX}
 \end{document}
