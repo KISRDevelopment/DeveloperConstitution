@@ -29,21 +29,21 @@ This constitution aims to def{}ine the work f{}low of any development projects u
 In the following sections we will discuss several tools, most of them built on top of Unix like operating systems. The following sections will put emphasis on the importance of using \textbf{Free} and \textbf{Open Source} software. We admit that there is occasionally a steep learning curve, but after passing it things will make a lot more sense, and you will be a faster, more productive developer.
 
 \section{Virtual Machine}
-Some projects may require you to work in a specif{}ic environment. You might need to develop and run your application in specif{}ic operating systems, using specif{}ic tools, set up in a very specif{}ic way (e.g. a webGIS service running off a GeoServer with an Oracle Spatial database).
+Some projects may require you to work in a specif{}ic environment. You might need to develop and run your application in specif{}ic operating systems, using specif{}ic tools, set up in a very specif{}ic way (e.g. a webGIS service running of{}f a GeoServer with an Oracle Spatial database).
 
 One way to do this is to have a whole new physical development machine for every project type that you work on. As you can imagine this can get very expensive and wasteful very fast. Another way would be to force development to adhere to one specif{}ic environment and setup but this is very limiting to a developer.
 
 With a virtual machine (VM) you can run an emulation of an entire computer on your host system. This allows you to create very specif{}ic development environments where you have the OS that you need, loaded only with the very specif{}ic tools and software that you need for the project that you are currently working on. You can take snapshots of your VM, mess around with it, and if anything goes wrong, you can scrap it and reload it from the snapshot. When you're done and your application has been moved to production, you just scrap the VM.
 
 \section{Command Line Interface}
-There are many many many Command Line Interface (CLI) tools out there. Some universities dedicate months to teaching CS and CE students how to use them effectively. They are extremely useful for helping you setup, navigate, and manipulate your development environment.
-We recommend using the CLI as much as possible. It will make you faster and more efficient. %and as a bonus you feel like you're commanding a spaceship or like you're a supercool hax0r!! %this is what happens when I edit things at 3:30am
+There are many many many Command Line Interface (CLI) tools out there. Some universities dedicate months to teaching CS and CE students how to use them ef{}fectively. They are extremely useful for helping you setup, navigate, and manipulate your development environment.
+We recommend using the CLI as much as possible. It will make you faster and more ef{}f{}icient. %and as a bonus you feel like you're commanding a spaceship or like you're a supercool hax0r!! %this is what happens when I edit things at 3:30am
 
 
 \section{Package Managers}
-At certain points in the development process you will find yourself adding and removing a huge number of packages, libraries and entire applications. A package manager is a collection of software tools that makes the process of installing, upgrading, configuring and removing all this software from your operating system automated and efficient.
+At certain points in the development process you will f{}ind yourself adding and removing a huge number of packages, libraries and entire applications. A package manager is a collection of software tools that makes the process of installing, upgrading, conf{}iguring and removing all this software from your operating system automated and ef{}f{}icient.
 
-This is a concept that has gained significant traction over the last few years with the advent of mobile computing. With a phone or a tablet, you don't want to have to hunt around for the software you need to install and you don't want to have to manually upgrade all your applications. Instead you have a package management system  with a GUI (e.g. the Play Store).
+This is a concept that has gained signif{}icant traction over the last few years with the advent of mobile computing. With a phone or a tablet, you don't want to have to hunt around for the software you need to install and you don't want to have to manually upgrade all your applications. Instead you have a package management system  with a GUI (e.g. the Play Store).
 
 \section{Version Control Systems}
 An absolutely critical part of any group development setup is version and revision control. If you setup a repository of f{}iles for your project and you have multiple people working on these f{}iles then it becomes absolutely critical to track the changes that are taking place. You need to know what was changed, when it was changed and who changed it. Luckily there are existing version control systems (VCS) that can manage all of this for you.
@@ -63,18 +63,12 @@ Any kind of web application development (and this accounts for most modern devel
 Testing, retesting, testing one more time and testing again. This is something that we're all familiar with when it comes to programming. However, when it comes to large scale development testing can quickly become a massively time consuming, repetitive task. Luckily, you don't have to deal with that kind of tedium. There are many language dependant testing frameworks, separate from the software you're developing, that will let you automate your testing.
 
 \section{Documentation and Reporting}
+It is vital to document your code, not just so other developers can quickly understand what you're trying to accomplish, but also so you can understand your own code as you return to it. There are tools and protocols available that will allow you to quickly generate documentation in many formats from the comments you add during coding.
+
+You will also be generating a lot of reports after completing sections of a project. Rather than waste time on formatting and layout, there are tools that allow you to focus purely on the content. This document was written using \LaTeX and it's a good example of reporting software.
 
 
 \section{Logging Software and Issue Tracking Software}
-\subsection{example software}
-
-\section{CGI vs WSGI}
-
-\section{RESTful}
-
-\section{General Programming Advice}
-
-\section{Glossary of Abbreviations}
-%is there a way to build glossaries using LaTex?
+You will need to keep track of how your application is being used, both in development and production. You need to have a way to quickly f{}ind, reproduce and resolve errors that are encountered by users. You also want to be able to optimise the way your application runs. Logging and tracking software packages give you an interface to this information. This will give you a better understanding of how your software works and how you can improve and evolve it.
 
 \end{document}
